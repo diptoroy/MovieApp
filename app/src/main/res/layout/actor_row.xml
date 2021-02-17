@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/actorImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/yellow"/>
+
+    <TextView
+        android:id="@+id/acotrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Jhon Doe"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/actorImage"
+        app:layout_constraintStart_toStartOf="@+id/actorImage"
+        app:layout_constraintTop_toBottomOf="@+id/actorImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
